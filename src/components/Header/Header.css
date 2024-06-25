@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.header {
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0, 0, 0.1); 
+}
+.lồn {
+   height: 1000px;
+}
+.marquee {
+  width: 100%;
+  background-color: #001f5d;
+  overflow: hidden;
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+.marquee-content {
+  white-space: nowrap;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  animation: marquee 30s linear infinite;
+  top: 0;
+  left: 100%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+.marquee-content span {
+  margin-right: 170px;
+  font-family: "Mulish", sans-serif;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.red {
+  fill: #d0021b;
+}
+.arrow {
+  height: 13px;
+  width:13px;
+}
+.arrow-icon {
+  transition: fill 0.5s ease; 
+}
+.product.font-red {
+  color: #d0021b;
+}
+.tech_container .nav_product {
+  fill:#001f5d;
+}
+
+.header-bottom {
+  display: flex;
+  padding-left: 28px;
+}
+.product_button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navigation {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 45px;
+  margin: auto;
+  padding: auto;
+  align-items: center;
+  scrollbar-width: thin;
+}
+.navigation a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.product_container {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.product {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+  color: black;
+}
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  20% {
+    color: #d0021b;
+  }
+  60% {
+    color: #d0021b;
+  }
+  100% {
+    color: #d0021b;
+  }
+}
+.product:hover {
+  animation: colorChange 3s forwards;
+}
+.aonam:hover {
+  animation: colorChange 3s forwards;
+}
+.aonam.font-red {
+  color:#d0021b;
+}
+.quannam.font-red {
+  color: #d0021b;
+}
+.quannam:hover {
+  animation: colorChange 3s forwards;
+}
+.collect:hover {
+  animation: colorChange 3s forwards;
+}
+.collect.font-red {
+  color: #d0021b;
+}
+.nav_product {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.nav_product:hover {
+  animation: colorChange 4s forwards;
+}
+
+.newproduct_container {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+
+.newproduct {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+  color: black;
+}
+
+.aonam_container {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.aonam_container:hover {
+  color: red;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.aonam {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+  color: black;
+}
+
+.quannam_container {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.quannam {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: relative;
+  color: black;
+}
+
+.tech_container {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.tech {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  color: #001e61;
+}
+
+.outlet_container {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.outlet {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  color: #d0021b;
+}
+
+.collect_container {
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+.collect {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.logo {
+  width: 10%;
+  padding-top: 14px;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.icon {
+  width: 10%;
+  display: flex;
+  gap: 16px;
+  padding-right: 20px;
+  padding-top: 17px;
+}
+
+
