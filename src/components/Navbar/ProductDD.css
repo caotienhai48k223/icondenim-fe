@@ -4,17 +4,16 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top:109px;
+  top:110px;
   width: 1230px;
   transform: translateX(-150px);
   box-shadow: 0 0 10px rgba(0,0, 0, 0.3); 
-  z-index: 10;
 }
 
 .aonam_div {
   background-color: white;
   position: absolute;
-  top:109px;
+  top:110px;
   padding-left: 30px;
   width: 190px;
   transform: translateX(-20px);
@@ -25,7 +24,7 @@
 .quannam_div {
   background-color: white;
   position: absolute;
-  top:109px;
+  top:110px;
   padding-left: 30px;
   width: 190px;
   transform: translateX(-20px);
@@ -36,7 +35,7 @@
 .collect_div {
   background-color: white;
   position: absolute;
-  top:109px;
+  top:110px;
   padding-left: 30px;
   width: 310px;
   transform: translateX(-20px);
@@ -48,25 +47,29 @@
   padding-top: 15px;
   background-color: white;
   position: absolute;
-  top:109px;
+  top:110px;
   padding-left: 30px;
   width: 220px;
   transform: translateX(-20px);
   box-shadow: 0 0 10px rgba(0,0, 0, 0.3); 
   z-index: 10;
 }
-.right_ic {
-  width: 13px;
-  height: 13px;
-  color: #001f5d;
+.sj_container,.i105_container {
+  display: flex;
+}
+#right_ic {
+  color: #001F5D;
+  font-size: 13px;
 }
 .sj_container .right{
-  padding-left: 75px;
-  padding-bottom: 8px;
+  position: relative;
+  left: 78px;
+  bottom:4px;
 }
 .i105_container .right {
-  padding-left: 23px;
-  padding-bottom: 8px;
+  position: relative;
+  left: 25px;
+  bottom: 4px;
 }
 
 .ao {
@@ -142,7 +145,7 @@
   position: absolute;
   padding-left: 30px;
   width: 250px;
-  transform: translate(220px,-45px);
+  transform: translate(220px,-15px);
   box-shadow: 0 0 10px rgba(0,0, 0, 0.3); 
 }
 
@@ -151,7 +154,7 @@
   position: absolute;
   padding-left: 30px;
   width: 310px;
-  transform: translate(220px,-35px);
+  transform: translate(220px,-20px);
   box-shadow: 0 0 10px rgba(0,0, 0, 0.3); 
 }
 .listsj {

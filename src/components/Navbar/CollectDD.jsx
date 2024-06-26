@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom'
 import './ProductDD.css'
 import { useState } from 'react'
 
-export default function CollectDD({isopencollect}) {
-    const[collectdd, setCollectdd] = useState(false)
-    console.log(isopencollect)
-    if (isopencollect==false) {return null}
+export default function CollectDD({isopencollect, onHoverEnter, onHoverLeave}) {
+  if (!isopencollect) {return null}
 
   return (
-    <div className='collect_div'>
+    <div className='collect_div' onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className='listcollect'>
         <Link to='/bst-ligth-summer-2024'><span>LIGHT SUMMER COLLECTION</span></Link>
         <Link to='/bst-winter-2023'><span>The Rhythm of Life - FW23</span></Link>

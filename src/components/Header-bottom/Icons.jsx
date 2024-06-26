@@ -1,24 +1,20 @@
 import React from 'react'
-import SearchIcon from '../Icons/Search'
-import UserIcon from '../Icons/User'
-import CartIcon from '../Icons/Cart'
-import HeartIcon from '../Icons/Heart'
 import { Link } from 'react-router-dom'
 
 export default function Icons() {
     return (
         <div className='icon'>
             <div className='searchicon'>
-                <SearchIcon />
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <Link to='/account'>
-                <UserIcon />
+                <i class="fa-solid fa-user"></i>
             </Link>
             <Link to='/enjoy'>
-                <HeartIcon />
+                <i class="fa-solid fa-heart"></i>
             </Link>
             <Link to='/cart'>
-                <CartIcon/>
+                <i class="fa-solid fa-cart-shopping"></i>
             </Link>
         </div>
     );

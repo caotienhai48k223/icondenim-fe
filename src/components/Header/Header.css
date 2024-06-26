@@ -1,15 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes colorbgChange {
+  0% {
+    background-color: black;
+  }
+  20% {
+    background-color: #ff6310;
+  }
+  60% {
+    background-color: #ff6310;
+  }
+  100% {
+    background-color: #ff6310;
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  20% {
+    color: #ff6310;
+  }
+  60% {
+    color: #ff6310;
+  }
+  100% {
+    color: #ff6310;
+  }
+}
+
 .header {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   position: fixed;
-  z-index: 1000;
   background: white;
+  width: 100%;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.1); 
+  z-index: 1000;
 }
 .lồn {
-   height: 1000px;
+  height: 1000px;
 }
 .marquee {
   width: 100%;
@@ -32,39 +70,12 @@
   margin-right: 170px;
   font-family: "Mulish", sans-serif;
 }
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.red {
-  fill: #d0021b;
-}
-.arrow {
-  height: 13px;
-  width:13px;
-}
-.arrow-icon {
-  transition: fill 0.5s ease; 
-}
-.product.font-red {
-  color: #d0021b;
-}
-.tech_container .nav_product {
-  fill:#001f5d;
-}
 
 .header-bottom {
   display: flex;
   padding-left: 28px;
 }
-.product_button {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+
 .navigation {
   display: flex;
   overflow-x: auto;
@@ -81,81 +92,101 @@
   display: flex;
   align-items: center;
 }
-.product_container {
-  padding-top: 17px;
-  padding-bottom: 15px;
+#arrow {
+  font-size: 14px;
+  display: flex;
+  position: relative;
+  color: black;
+  border-left: 100px;
+}
+#arrow1 {
+  font-size: 14px;
+}
+.product_content {
+  display: flex;
+  height: 60px;
+  align-items: center;
 }
 .product {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  display: flex;
-  position: relative;
   color: black;
 }
-@keyframes colorChange {
-  0% {
-    color: black;
-  }
-  20% {
-    color: #d0021b;
-  }
-  60% {
-    color: #d0021b;
-  }
-  100% {
-    color: #d0021b;
-  }
+.product_content::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in-out;
 }
-.product:hover {
-  animation: colorChange 3s forwards;
+.product_content:hover::before {
+  width: 100%;
+  animation: colorbgChange 2s forwards;
 }
-.aonam:hover {
-  animation: colorChange 3s forwards;
+.product_content:hover #arrow {
+  animation: colorChange 2s forwards;
+  animation-delay: 0.05s;
 }
-.aonam.font-red {
-  color:#d0021b;
+.product_content:hover .product {
+  animation: colorChange 2s forwards;
 }
-.quannam.font-red {
-  color: #d0021b;
+.product_content.hovered::before {
+  width: 100%;
+  animation: none;
 }
-.quannam:hover {
-  animation: colorChange 3s forwards;
-}
-.collect:hover {
-  animation: colorChange 3s forwards;
-}
-.collect.font-red {
-  color: #d0021b;
-}
+
 .nav_product {
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-top: 2px;
+  padding-left: 6px;
 }
-.nav_product:hover {
-  animation: colorChange 4s forwards;
+.new {
+  position: relative;
+  font-size: 12px;
+  color: red;
+  font-weight: 500;
+  width: 10px;
+  bottom:15px;
+  right: 5px;
 }
-
-.newproduct_container {
-  padding-top: 17px;
-  padding-bottom: 15px;
+.newproduct_content {
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
-
 .newproduct {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  display: flex;
-  position: relative;
   color: black;
 }
-
-.aonam_container {
-  padding-top: 17px;
-  padding-bottom: 15px;
+.newproduct_content::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 100;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in-out;
 }
-.aonam_container:hover {
-  color: red;
-  padding-top: 17px;
-  padding-bottom: 15px;
+.newproduct_content:hover::before {
+  width: 100%;
+  animation: colorbgChange 2s forwards;
+}
+.newproduct_content:hover #arrow {
+  animation: colorChange 2s forwards;
+  animation-delay: 0.05s;
+}
+.newproduct_content:hover .newproduct {
+  animation: colorChange 2s forwards;
+}
+
+.aonam_content {
+  display: flex;
+  height: 60px;
+  align-items: center;
 }
 .aonam {
   font-family: "Mulish", sans-serif;
@@ -164,10 +195,36 @@
   position: relative;
   color: black;
 }
+.aonam_content::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in-out;
+}
+.aonam_content:hover::before {
+  width: 100%;
+  animation: colorbgChange 2s forwards;
+}
+.aonam_content:hover #arrow {
+  animation: colorChange 2s forwards;
+  animation-delay: 0.05s;
+}
+.aonam_content:hover .aonam {
+  animation: colorChange 2s forwards;
+}
+.aonam_content.hoveredaonam::before {
+  width: 100%;
+  animation: none;
+}
 
-.quannam_container {
-  padding-top: 17px;
-  padding-bottom: 15px;
+.quannam_content {
+  display: flex;
+  height: 60px;
+  align-items: center;
 }
 .quannam {
   font-family: "Mulish", sans-serif;
@@ -176,36 +233,119 @@
   position: relative;
   color: black;
 }
+.quannam_content::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in-out;
+}
+.quannam_content:hover::before {
+  width: 100%;
+  animation: colorbgChange 2s forwards;
+}
+.quannam_content:hover #arrow {
+  animation: colorChange 2s forwards;
+  animation-delay: 0.05s;
+}
+.quannam_content:hover .quannam {
+  animation: colorChange 2s forwards;
+}
+.quannam_content.hoveredquannam::before {
+  width: 100%;
+  animation: none;
+}
 
-.tech_container {
-  padding-top: 17px;
-  padding-bottom: 15px;
+.tech_content {
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 .tech {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: #001e61;
 }
+.tech_content::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: 15px;
+  height: 2px;
+  background-color: #001e61;
+  transition: width 0.2s ease-in-out;
+}
+.tech_content:hover::before {
+  width: 100%;
+}
+.tech_content.hoveredtech::before {
+  width: 100%;
+  animation: none;
+}
 
-.outlet_container {
-  padding-top: 17px;
-  padding-bottom: 15px;
+.outlet_content {
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 .outlet {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: #d0021b;
 }
+.outlet_content::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 100;
+  width: 0;
+  height: 2px;
+  background-color: #d0021b;
+  transition: width 0.2s ease-in-out;
+}
+.outlet_content:hover::before {
+  width: 100%;
+}
 
-.collect_container {
-  padding-top: 17px;
-  padding-bottom: 15px;
+.collect_content {
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 .collect {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
   color: black;
 }
+.collect_content::before {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in-out;
+}
+.collect_content:hover::before {
+  width: 100%;
+  animation: colorbgChange 2s forwards;
+}
+.collect_content:hover #arrow {
+  animation: colorChange 2s forwards;
+  animation-delay: 0.05s;
+}
+.collect_content:hover .collect {
+  animation: colorChange 2s forwards;
+}
+.collect_content.hoveredcollect::before {
+  width: 100%;
+  animation: none;
+}
+
 .logo {
   width: 10%;
   padding-top: 14px;
@@ -222,5 +362,25 @@
   padding-right: 20px;
   padding-top: 17px;
 }
-
-
+.fa-solid.fa-magnifying-glass {
+  color: #001F5D;
+  font-size: 23px;
+}
+.fa-solid.fa-user {
+  color: #001F5D;
+  font-size: 23px;
+}
+.fa-solid.fa-heart {
+  color: #001F5D;
+  font-size: 23px;
+}
+.fa-solid.fa-cart-shopping {
+  color: #001F5D;
+  font-size: 23px;
+}
+.header .product_div {
+  background-color: white
+}
+.header .product_div:hover .product{
+  background: #000;
+}

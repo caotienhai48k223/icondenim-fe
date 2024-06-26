@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ShareIcon from '../Icons/Share'
-import FacebookIcon from '../Icons/Facebook'
 import { useState } from 'react'
 
 export default function Footer4() {
@@ -40,13 +38,13 @@ export default function Footer4() {
           <div className='ft4_bottom'>
             <div className='ft4_button1'>
               <button className='ft4_btn1' onClick={handleFlclick}>
-                <FacebookIcon className={following ? 'fb_ic':'fb_ic_fl'}/>
+                <i class="fa-brands fa-square-facebook" id={following ? 'fb_ic':'fb_ic_fl'}></i>
                 <div className={following ? 'fb':'fb_fl'}>{following ? 'Đã theo dõi':'Theo dõi Trang'}</div>
               </button>
             </div>
             <div className='ft4_button2'>
               <button className='ft4_btn2' onClick={handleShclick}>
-                <ShareIcon className='share_ic'/>
+                <i class="fa-solid fa-share" id='share_ic'></i>
                 <div className='share'>Chia sẻ</div>
               </button>
             </div>
@@ -77,7 +75,7 @@ export default function Footer4() {
             <img src='https://theme.hstatic.net/1000360022/1001251460/14/dathongbao.png?v=1288' alt='bct_img'/>
           </Link>
         </div>
-        <i class="fa-brands fa-twitter"></i>
+        <div className='test'>Hihi                    <i class="fa-brands fa-twitter"></i></div>
       </div>
     </div>
   )

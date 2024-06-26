@@ -54,9 +54,8 @@
     color: rgb(226, 105, 105);
     font-weight: 400;
 }
-.call_ic, .email_ic {
-    height: 12px;
-    width: 12px;
+.fa-solid.fa-phone, .fa-solid.fa-envelope {
+    font-size: 12px;
     color: white;
 }
 .form {
@@ -277,15 +276,13 @@
     border: 1px solid grey;
     border-radius: 2px;
 }
-.fb_ic {
-    width: 12px;
-    height: auto;
+#fb_ic {
+    font-size: 12px;
     color: grey;
     padding: 3px 0 4px 3px;
 }
-.fb_ic_fl {
-    width: 12px;
-    height: auto;
+#fb_ic_fl {
+    font-size: 12px;
     padding: 3px 0 4px 3px;
     color: rgb(0, 0, 134);
 }
@@ -293,7 +290,7 @@
     font-weight: 600;
     color: grey;
     padding-left: 3px;
-    padding-top: 2px;
+    padding-top: 1px;
 }
 .fb_fl {
     font-weight: 600;
@@ -308,19 +305,18 @@
     border-radius: 2px;
     align-items: center;
 }
-.share_ic {
-    width: 12px;
-    height: auto;
+#share_ic {
+    font-size: 12px;
     color: grey;
     padding: 3px 0 5px 3px;
 }
 .share {
-    padding-top: 2px;
+    padding-top: 1px;
     padding-left: 3px;
     font-weight: 600;
     color: grey;
 }
-i {
+.fa-brands.fa-twitter{
     display: inline-block;
     background: linear-gradient(to right, red, blue);
     background-size: 200% 100%;
@@ -329,9 +325,9 @@ i {
     -webkit-text-fill-color: transparent;
     transition: background-position 0.5s;
     cursor: pointer;
-  }
+}
   
-  i:hover {
+.test:hover .fa-brands.fa-twitter {
     background-position: -100% 0;
-  }
+}
   

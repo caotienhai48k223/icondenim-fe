@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-import RightIcon from '../../Icons/Right';
 import { Link } from 'react-router-dom';
 
 export default function HangMoi() {
@@ -118,7 +117,7 @@ export default function HangMoi() {
               <Link to='/san-pham-moi' className='cl_btn'>
                 <div className='link_button'>Xem tất cả</div>
                 <div className='cl_icon'>
-                  <RightIcon className='right_ic1'/>
+                  <i class="fa-solid fa-angle-right" id='right_ic1'></i>
                 </div>
               </Link>
           </div>

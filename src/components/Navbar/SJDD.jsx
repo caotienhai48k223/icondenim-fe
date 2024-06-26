@@ -4,8 +4,7 @@ import './ProductDD.css'
 import { useState } from 'react'
 
 export default function SJDD({isopensj}) {
-    const[sjdd, setSjdd] = useState(false)
-    if (!isopensj) {return null}
+  if (!isopensj) {return null}
 
   return (
     <div className='sj_div'>

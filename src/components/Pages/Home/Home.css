@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 .slide1 {
   padding-top: 109px;
+  z-index: 0;
 }
 .slide1 .react-multiple-carousel__arrow {
   opacity: 0;
   font-weight: 500;
   background: rgb(221, 218, 218);
   transition: opacity 0.3s ease;
-  z-index: 5;
+  z-index: 1;
 }
 .slide1 .react-multiple-carousel__arrow:hover  {
   font-weight: 700;
@@ -276,7 +277,7 @@
 .cl_button:hover .link_button{
   color: white;
 }
-.cl_button:hover .right_ic1 {
+.cl_button:hover #right_ic1 {
   color: white;
 }
 .cl_button:hover {
@@ -285,11 +286,10 @@
 }
 .cl_icon {
   padding-left: 2px;
-  padding-top: 9px;
+  padding-top: 8px;
 }
-.right_ic1 {
-  width: 13px;
-  height: 13px;
+#right_ic1 {
+  font-size: 13px;
   color: black;
 }
 .slide2 .react-multiple-carousel__arrow {
@@ -508,9 +508,8 @@
   position: relative;
   display: inline-block;
 }
-.ins_ic {
-  width: 30px;
-  height: 30px;
+.fa-brands.fa-instagram {
+  font-size: 30px;
   color: rgb(234, 103, 9);
 }
 .ins_icon{
@@ -528,7 +527,6 @@
   align-items: center;
   opacity: 0;
   transition: transform 0.1s ease, opacity 0.3s ease;
-  cursor: pointer;
 }
 .ins_img {
   max-width: 600px;

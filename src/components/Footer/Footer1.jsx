@@ -1,6 +1,4 @@
 import React from 'react'
-import CallIcon from '../Icons/Call'
-import EmailIcon from '../Icons/Email'
 import EmailForm from './EmailForm'
 import './Footer.css'
 import { Link } from 'react-router-dom'
@@ -15,7 +13,7 @@ export default function Footer1() {
       </div>
       <div className='ft_call'>
         <div className='call_icon'>
-          <a href='tel: +842873066060'><CallIcon className='call_ic'/></a>
+          <a href='tel: +842873066060'><i class="fa-solid fa-phone"></i></a>
         </div>
         <div className='call_info'>
           <a href='tel:+842873066060'>Tổng đài CSKH: 02873066060</a>
@@ -23,7 +21,7 @@ export default function Footer1() {
       </div>
       <div className='ft_email'>
         <div className='email_icon'>
-          <a href='mailto:cskh@icondenim.com'><EmailIcon className='email_ic'/></a> 
+          <a href='mailto:cskh@icondenim.com'><i class="fa-solid fa-envelope"></i></a> 
         </div>
         <div className='email_info'>
           <a href='mailto:cskh@icondenim.com'>Email: cskh@icondenim.com</a>

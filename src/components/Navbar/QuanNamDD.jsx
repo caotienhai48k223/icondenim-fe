@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom'
 import './ProductDD.css'
 import { useState } from 'react'
 
-export default function QuanNamDD({isopenquannam}) {
-  const [quannamdd,setQuannamdd] = useState(false);
-  console.log(isopenquannam)
-  if (isopenquannam == false) {return null}
+export default function QuanNamDD({isopenquannam, onHoverEnter, onHoverLeave}) {
+  if (!isopenquannam) {return null}
 
   return (
-    <div className='quannam_div'>
+    <div className='quannam_div' onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className='listquan'>
         <Link to='/quanjean'><span>Quần Jean</span></Link>
         <Link to='/quanshort'><span>Quần Short</span></Link>

@@ -4,9 +4,7 @@ import './ProductDD.css'
 import { useState } from 'react'
 
 export default function I105DD({isopeni105}) {
-    const[i105dd, setI105dd] = useState(false)
-    console.log(isopeni105)
-    if (isopeni105==false) {return null}
+  if (!isopeni105) {return null}
 
   return (
     <div className='i105_div'>

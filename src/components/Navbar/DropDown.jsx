@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom'
 import './ProductDD.css'
 import { useState } from 'react'
 
-export default function DropDown({isopen}) {
-  const [dropdown,setDropdown] = useState(false);
-  console.log(isopen)
-  if (isopen == false) {return null}
+export default function DropDown({isopen, onHoverEnter, onHoverLeave}) {
+  if (!isopen) return null
 
   return (
-    <div className='product_div'>
+    <div className='product_div' onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className='ao'>
         <Link to='/ao' className='ao_content'>ÁO</Link>
         <div className='listao'>
