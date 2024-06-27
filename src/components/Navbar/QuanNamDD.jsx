@@ -1,13 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './ProductDD.css'
-import { useState } from 'react'
 
 export default function QuanNamDD({isopenquannam, onHoverEnter, onHoverLeave}) {
-  if (!isopenquannam) {return null}
-
   return (
-    <div className='quannam_div' onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
+    <div className={`quannam_div ${isopenquannam ? 'showquannam' : 'hidequannam'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className='listquan'>
         <Link to='/quanjean'><span>Quần Jean</span></Link>
         <Link to='/quanshort'><span>Quần Short</span></Link>

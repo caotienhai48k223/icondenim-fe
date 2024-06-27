@@ -1,13 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './ProductDD.css'
-import { useState } from 'react'
 
 export default function AoNamDD({isopenaonam, onHoverEnter, onHoverLeave}) {
-  if (!isopenaonam) return null
-
   return (
-    <div className='aonam_div' onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
+    <div className={`aonam_div ${isopenaonam ? 'showaonam':'hideaonam'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className='listao'>
         <Link to='/aothun'><span>Áo Thun</span></Link>
         <Link to='/aopolo'><span>Áo Polo</span></Link>

@@ -101,6 +101,7 @@
 }
 #arrow1 {
   font-size: 14px;
+  color: #001F5D;
 }
 .product_content {
   display: flex;
@@ -378,9 +379,4 @@
   color: #001F5D;
   font-size: 23px;
 }
-.header .product_div {
-  background-color: white
-}
-.header .product_div:hover .product{
-  background: #000;
-}
+
