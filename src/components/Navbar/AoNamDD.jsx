@@ -4,7 +4,7 @@ import './ProductDD.css'
 
 export default function AoNamDD({isopenaonam, onHoverEnter, onHoverLeave}) {
   return (
-    <div className={`aonam_div ${isopenaonam ? 'showaonam':'hideaonam'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
+    <div className={`dd_aonam_div ${isopenaonam ? 'showaonam':'hideaonam'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className='listao'>
         <Link to='/aothun'><span>Áo Thun</span></Link>
         <Link to='/aopolo'><span>Áo Polo</span></Link>

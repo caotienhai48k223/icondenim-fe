@@ -5,7 +5,7 @@ import './ProductDD.css'
 
 export default function CollectDD({isopencollect, onHoverEnter, onHoverLeave}) {
   return (
-    <div className={`collect_div ${isopencollect ? 'showcollect':'hidecollect'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
+    <div className={`dd_collect_div ${isopencollect ? 'showcollect':'hidecollect'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className='listcollect'>
         <Link to='/bst-ligth-summer-2024'><span>LIGHT SUMMER COLLECTION</span></Link>
         <Link to='/bst-winter-2023'><span>The Rhythm of Life - FW23</span></Link>

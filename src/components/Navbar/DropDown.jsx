@@ -4,9 +4,9 @@ import './ProductDD.css'
 
 export default function DropDown({isopen, onHoverEnter, onHoverLeave}) {
   return (
-    <div className={`product_div ${isopen ? 'show':'hide'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
-      <div className='ao'>
-        <Link to='/ao' className='ao_content'>ÁO</Link>
+    <div className={`dd_product_div ${isopen ? 'show':'hide'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
+      <div className='dd_ao'>
+        <Link to='/ao' className='dd_ao_content'>ÁO</Link>
         <div className='listao'>
           <Link to='/aothun'><span>Áo Thun</span></Link>
           <Link to='/aopolo'><span>Áo Polo</span></Link>
@@ -18,8 +18,8 @@ export default function DropDown({isopen, onHoverEnter, onHoverLeave}) {
           <Link to='/set'><span>Set Đồ</span></Link>
         </div>
       </div>
-      <div className='quan'>
-        <Link to='/quan' className='quan_content'>QUẦN</Link>
+      <div className='dd_quan'>
+        <Link to='/quan' className='dd_quan_content'>QUẦN</Link>
         <div className='listquan'>
           <Link to='/quanjean'><span>Quần Jean</span></Link>
           <Link to='/quanshort'><span>Quần Short</span></Link>
@@ -31,8 +31,8 @@ export default function DropDown({isopen, onHoverEnter, onHoverLeave}) {
           <Link to='/smartjean'><span>Smart Jean</span></Link>
         </div>
       </div>
-      <div className='gvp'>
-        <Link to='/giay&phukien' className='gvp_content'>GIÀY & PHỤ KIỆN</Link>
+      <div className='dd_gvp'>
+        <Link to='/giay&phukien' className='dd_gvp_content'>GIÀY & PHỤ KIỆN</Link>
         <div className='listgvp'>
           <Link to='/giay&dep'><span>Giày & Dép</span></Link>
           <Link to='/tui&vi'><span>Balo, Túi & Ví</span></Link>

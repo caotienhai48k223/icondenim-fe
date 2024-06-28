@@ -1,12 +1,12 @@
-.product_div {
+.dd_product_div {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   top:110px;
-  width: 1230px;
-  transform: translateX(-150px);
+  width: 1270px;
+  left:125px;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   overflow: hidden;
@@ -22,13 +22,12 @@
   font-size: 0;
 }
 
-.aonam_div {
+.dd_aonam_div {
   background-color: white;
   position: absolute;
   top:110px;
-  padding-left: 30px;
-  width: 190px;
-  transform: translateX(-20px);
+  width: 205px;
+  left:530px;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   overflow: hidden;
@@ -36,7 +35,7 @@
   font-size: 0;
 }
 .showaonam {
-  height: 255px;
+  height: 260px;
   font-size: 16px;
 }
 .hideaonam {
@@ -44,13 +43,12 @@
   font-size: 0;
 }
 
-.quannam_div {
+.dd_quannam_div {
   background-color: white;
   position: absolute;
   top:110px;
-  padding-left: 30px;
-  width: 190px;
-  transform: translateX(-20px);
+  width: 200px;
+  left:650px;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   overflow: hidden;
@@ -58,7 +56,7 @@
   font-size: 0;
 }
 .showquannam {
-  height: 255px;
+  height: 260px;
   font-size: 16px;
 }
 .hidequannam {
@@ -66,13 +64,12 @@
   font-size: 0;
 }
 
-.collect_div {
+.dd_collect_div {
   background-color: white;
   position: absolute;
   top:110px;
-  padding-left: 30px;
-  width: 310px;
-  transform: translateX(-20px);
+  width: 340px;
+  left:1110px;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   overflow: hidden;
@@ -80,7 +77,7 @@
   font-size: 0;
 }
 .showcollect {
-  height: 230px;
+  height: 235px;
   font-size: 16px;
 }
 .hidecollect {
@@ -98,7 +95,7 @@
   bottom: 4px;
 }
 
-.ao {
+.dd_ao {
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -112,13 +109,13 @@
   font-weight: 500;
   color: black;
 }
-.ao_content {
+.dd_ao_content {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: black;
 }
 
-.quan {
+.dd_quan {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -131,20 +128,20 @@
   font-weight: 500;
   color: black;
 }
-.quan_content {
+.dd_quan_content {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: black;
 }
 
-.gvp {
+.dd_gvp {
   padding-bottom: 64px;
   padding-right: 30px;
 }
 .listgvp {
   padding-top: 15px;
 }
-.gvp_content {
+.dd_gvp_content {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: black;
@@ -164,13 +161,12 @@
   font-weight: 500;
   color: black;
 }
-.tech_div {
+.dd_tech_div {
   background-color: white;
   position: absolute;
   top:110px;
-  padding-left: 30px;
-  width: 220px;
-  transform: translateX(-20px);
+  width: 230px;
+  left:790px;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   transition: height 0.4s ease, font-size 0.3s ease;
@@ -202,46 +198,45 @@
 .sj_div {
   background-color: white;
   position: absolute;
-  transform: translate(220px,-15px);
+  transform: translate(229px,-15px);
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
-  width: 0;
   overflow: hidden;
-  transition: width 0.4s ease, font-size 0.3s ease;
+  transition: width 0.4s ease, height 0.4s ease, font-size 0.5s ease;
   font-size: 0;
 }
 .showsj {
-  width: 260px;
+  width: 250px;
+  height: 75px;
   font-size: 16px;
 }
 .hidesj {
   width: 0;
+  height: 40px;
   font-size: 0;
-  height: 45px;
 }
 
 .i105_div {
   background-color: white;
   position: absolute;
-  transform: translate(220px,-20px);
+  transform: translate(229px,-20px);
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
-  width: 0;
   overflow: hidden;
-  transition: width 0.4s ease, font-size 0.3s ease;
+  transition: width 0.4s ease, height 0.4s ease,font-size 0.5s ease;
   font-size: 0;
 }
 .showi105 {
-  width: 330px;
+  width: 320px;
+  height: 75px;
   font-size: 16px;
 }
 .hidei105 {
   width: 0;
   font-size: 0;
-  height: 49px;
+  height: 50px;
 }
 
 .listsj {
   padding-top: 15px;
-  padding-left: 30px;
 }
 .listsj span {
   margin-bottom: 10px;
@@ -251,7 +246,6 @@
 }
 .listi105 {
   padding-top: 15px;
-  padding-left: 30px;
 }
 .listi105 span {
   margin-bottom: 10px;
@@ -267,10 +261,10 @@
   display: flex;
 }
 .listao span:hover,.listcollect span:hover,.listquan span:hover, .listgvp span:hover {
-  color: #d0021b;
+  color: #ff6310;
 }
 .ao_content:hover,.quan_content:hover,.gvp_content:hover {
-  color: #d0021b;
+  color: #ff6310;
 }
 
 

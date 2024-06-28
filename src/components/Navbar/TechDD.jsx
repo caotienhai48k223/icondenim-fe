@@ -16,7 +16,7 @@ export default function TechDD({ isopentech, onHoverEnter, onHoverLeave}) {
   
 
   return (
-    <div className={`tech_div ${isopentech ? 'showtech':'hidetech'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
+    <div className={`dd_tech_div ${isopentech ? 'showtech':'hidetech'}`} onMouseEnter={onHoverEnter} onMouseLeave={onHoverLeave}>
       <div className="sj_container" onMouseEnter={handleSjddopen} onMouseLeave={handleSjddclose}>
         <Link to="/smart-jeans">
           <div className="smartjean">
