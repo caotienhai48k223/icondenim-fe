@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.mobile_container {
+  position: fixed;
+  z-index: 2000;
+  background-color: white;
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  transition: width 0.4s ease,  margin-left 0.4s ease;
+  white-space: nowrap;
+}
+.showmb {
+  width: 320px;
+  overflow: hidden;
+}
+.hidemb {
+  width: 0;
+  margin-left: -320px
+}
+
+.mobile_opacity {
+  background:black;
+  position: fixed;
+  z-index: 1999;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+.showopa {
+  width: 100vw;
+  opacity: 0.7;
+}
+.hideopa {
+  width: 0;
+  opacity: 0;
+}
+.top_mobiledd {
+  padding: 17.5px;
+  background: black;
+}
+.top_mobiledd a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.login_ic {
+  padding-right: 13px;
+}
+.user2 {
+  font-size: 33px;
+  color: white;
+}
+.mobile_login {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+}
+.right_ic2 {
+  font-size: 14px;
+  color: black;
+}
+.product_mb {
+  margin: 5px 0 10px 0;
+}
+.product_mb_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.product_mb_title a {
+  height: 100%;
+}
+.product_mb_title a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px 0 10px;
+}
+.product_mb_title a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 10px 0 10px;
+}
+
+.newproduct_mb {
+  margin: 10px 0 10px 0;
+}
+.newproduct_mb_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.newproduct_mb_title a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 10px 0 10px;
+  height: 100%;
+}
+
+.aonam_mb {
+  margin: 10px 0 10px 0;
+}
+.aonam_mb_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.aonam_mb_title a {
+  height: 100%;
+}
+.aonam_mb_title a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px 0 10px;
+}
+.aonam_mb_title a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 10px 0 10px;
+}
+
+.quannam_mb {
+  margin: 10px 0 10px 0;
+}
+.quannam_mb_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.quannam_mb_title a {
+  height: 100%;
+}
+.quannam_mb_title a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px 0 10px;
+}
+.quannam_mb_title a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 10px 0 10px;
+}
+
+.techurban_mb {
+  margin: 10px 0 10px 0;
+}
+.techurban_mb_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.techurban_mb_title a {
+  height: 100%;
+}
+.techurban_mb_title a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px 0 10px;
+}
+.techurban_mb_title a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: #001f5d;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 10px 0 10px;
+}
+
+.outlet_mb {
+  margin: 10px 0 10px 0;
+}
+.outlet_mb_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.outlet_mb_title a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: #d0021b;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 700;
+}
+
+.collect_mb {
+  margin: 10px 0 10px 0;
+}
+.collect_mb_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.collect_mb_title a {
+  height: 100%;
+}
+.collect_mb_title a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px 0 10px;
+}
+.collect_mb_title a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+}

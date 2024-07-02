@@ -12,15 +12,24 @@ import LookBook from './LookBook'
 import Video from './Video'
 import Instagram from './Instagram'
 import Footer from '../../Footer/Footer'
+import MobileDD from '../../Header-bottom/MobileDD'
+import { useState } from 'react'
 
 export default function Home() {
+  const [mobileDropdownVisible, setMobileDropdownVisible] = useState(false);
+
+  const toggleMobileDropdown = () => {
+    setMobileDropdownVisible(!mobileDropdownVisible);
+  };
+
   return (
-    <div>
+    <div className='home_index'>
       <Helmet>
         <title>ICONDENIM - Thương Hiệu Thời Trang Nam Của Sự Tận Hưởng</title>
       </Helmet>
+      <MobileDD visible={mobileDropdownVisible} toggleMobileDropdown={toggleMobileDropdown}/>
       <div className='home_page'>
-        <Header/>
+        <Header toggleMobileDropdown={toggleMobileDropdown}/>
         <body>
           <Slide1/>
           <Policies/>

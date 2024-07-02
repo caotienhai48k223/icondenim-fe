@@ -5,7 +5,7 @@ import Logo from '../Header-bottom/Logo';
 import Navigation from '../Header-bottom/Navigation';
 import Icons from '../Header-bottom/Icons';
 
-export default function Header() {
+export default function Header({ toggleMobileDropdown }) {
 
     return (
         <header className='header'>
@@ -13,7 +13,7 @@ export default function Header() {
                 <Marquee/>
             </div>
             <div className='header-bottom'>
-                <Logo/>
+                <Logo toggleMobileDropdown={toggleMobileDropdown}/>
                 <Navigation/>
                 <Icons/>
             </div>

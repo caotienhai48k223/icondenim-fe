@@ -49,6 +49,7 @@
 .lồn {
   height: 1000px;
 }
+
 .marquee {
   width: 100%;
   background-color: #001f5d;
@@ -390,8 +391,13 @@
 
 .logo {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.logo img {
+.log_img {
+  width: 130%;
+}
+.logo_img img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -401,20 +407,35 @@
   display: flex;
   gap: 16px;
 }
-.fa-solid.fa-magnifying-glass {
+.search1 {
   color: #001F5D;
   font-size: 23px;
 }
-.fa-solid.fa-user {
+.user1 {
   color: #001F5D;
   font-size: 23px;
 }
-.fa-solid.fa-heart {
+.heart1 {
   color: #001F5D;
   font-size: 23px;
 }
-.fa-solid.fa-cart-shopping {
+.cart1 {
   color: #001F5D;
   font-size: 23px;
 }
 
+.menu {
+  font-size: 25px;
+  padding-top: 3px;
+  display: none;
+}
+
+@media screen and (max-width:992px){
+  .menu {
+    display: block;
+    cursor: pointer;
+  }
+  .logo_img img {
+    max-width: 130%;
+  }
+}
