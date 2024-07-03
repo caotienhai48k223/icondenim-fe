@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@media screen and (min-width:992px){
+  .mobile_div {
+    display: none;
+  }
+}
 .mobile_container {
   position: fixed;
   z-index: 2000;
@@ -239,4 +244,483 @@
   color: black;
   text-decoration: none;
   padding: 0 10px 0 10px;
+}
+
+
+.menuproduct, .sub-menuproduct {
+  display: none;
+}
+
+.menuproduct.active, .sub-menuproduct.active {
+  display: block;
+}
+
+.menu-item {
+  padding: 10px 0;
+}
+
+/* CSS Menu Sản Phẩm */
+.back_ic {
+  font-size: 18px;
+  color: white;
+  height: 100%;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.top_productmb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.productmb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_productmb .menuproduct_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menuproduct_items {
+  margin: 10px 0 10px 0;
+  padding: 0 10px 0 10px;
+}
+.menuproduct_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menuproduct_items_title a {
+  height: 100%;
+}
+.menuproduct_items_title a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px 0 10px;
+}
+.menuproduct_items_title a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 10px 0 10px;
+}
+
+/* CSS Menu Áo Nam */
+.top_aonammb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.aonammb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_aonammb .menuaonam_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menuaonam_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menuaonam_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menuaonam_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color:black;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 500;
+}
+
+/* CSS Menu Quần Nam */
+.top_quannammb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.quannammb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_quannammb .menuaonam_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menuquannam_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menuquannam_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menuquannam_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color:black;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 500;
+}
+
+/* CSS Menu Tech UrBan Jeans */
+.top_techurbanmb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.techurbanmb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_techurbanmb .menutechurban_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menutechurban_items {
+  margin: 10px 0 10px 0;
+  padding: 0 10px 0 10px;
+}
+.menutechurban_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menutechurban_items_title a {
+  height: 100%;
+}
+.menutechurban_items_title a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px 0 10px;
+}
+.menutechurban_items_title a:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: #001f5d;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 10px 0 10px;
+}
+
+/* CSS Menu Collection */
+.top_collectmb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.collectmb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_collectmb .menucollect_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menucollect_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menucollect_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menucollect_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color:black;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 500;
+}
+
+/* CSS Menu Áo */
+.top_aomb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.aomb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_aomb .menuao_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menuao_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menuao_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menuao_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color:black;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 500;
+}
+
+/* CSS Menu Quần */
+.top_quanmb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.quanmb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_quanmb .menuquan_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menuquan_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menuquan_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menuquan_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color:black;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 500;
+}
+
+/* CSS Menu Giày & Phụ Kiện */
+.top_gvpmb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.gvpmb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_gvpmb .menugvp_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menugvp_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menugvp_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menugvp_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color:black;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 500;
+}
+
+/* CSS Menu Smart Jeans */
+.top_sjmb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.sjmb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_sjmb .menusj_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menusj_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menusj_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menusj_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: #001f5d;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 700;
+}
+
+/* CSS Menu ICON105 Lightweight */
+.top_i105mb {
+  display: flex;
+  padding: px;
+  background: #000;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.i105mb_header {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_i105mb .menui105_items:nth-child(1) {
+  margin: 5px 0 10px 0;
+}
+.menui105_items {
+  margin: 10px 0 10px 0;
+  padding-left: 10px;
+}
+.menui105_items_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.menui105_items a{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: #001f5d;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  height: 100%;
+  font-weight: 700;
 }
