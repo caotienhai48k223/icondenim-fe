@@ -26,7 +26,7 @@ export default function MobileDD({ visible, toggleMobileDropdown }) {
       <div className={`mobile_container ${visible ? "showmb" : "hidemb"}`}>
         <div className={`menuproduct ${currentMenu === "mainMenu" ? "active" : ""}`} id="mainMenu">
           <div className="top_mobiledd">
-            <Link to="/">
+            <Link to="/account">
               <div className="login_ic">
                 <i class="fa-solid fa-user user2"></i>
               </div>
