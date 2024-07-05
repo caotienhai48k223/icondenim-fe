@@ -10,7 +10,7 @@ import Tech from "./components/Pages/Tech";
 import Outlet from "./components/Pages/Outlet";
 import Collect from "./components/Pages/Collect";
 import Enjoy from "./components/Pages/Enjoy";
-import Account from "./components/Pages/Account";
+import Account from "./components/Pages/Account/Account";
 import Cart from "./components/Pages/Cart";
 
 const App = () => {

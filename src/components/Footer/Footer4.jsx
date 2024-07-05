@@ -75,7 +75,6 @@ export default function Footer4() {
             <img src='https://theme.hstatic.net/1000360022/1001251460/14/dathongbao.png?v=1288' alt='bct_img'/>
           </Link>
         </div>
-        <div className='test'>Hihi                    <i class="fa-brands fa-twitter"></i></div>
       </div>
     </div>
   )

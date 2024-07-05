@@ -1,333 +1,395 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-.footer_div{
-    background: #001f5d;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+.footer_div {
+  background: #001f5d;
 }
 .footer_container {
-    padding: 50px 34px 30px 34px;
+  padding: 50px 30px 30px 30px;
 }
-.footer_content{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+@media (min-width:0px) and (max-width: 360px){
+  .footer1_container,
+  .footer2_container,
+  .footer3_container,
+  .footer4_container {
+    padding: 0 0 15px 0;
+  }
+  .ft4_img {
+    width: 270px !important;
+    aspect-ratio: 296/137 !important;
+  }
+  .ft4_bottom {
+    width: 255px !important;
+  }
+  .email_input {
+    width: 130px !important;
+  }
 }
-.footer1_container {
+@media (min-width: 361px) and (max-width: 679.99px) {
+  .footer_content {
+    flex-wrap: none;
+    width: 100%;
+  }
+  .footer1_container,
+  .footer2_container,
+  .footer3_container,
+  .footer4_container {
+    padding: 0 10px 15px 10px;
+  }
+}
+@media (min-width: 680px) and (max-width: 949.99px) {
+  .footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer1_container,
+  .footer2_container {
+    width: 45%;
+    padding: 0 10px 15px 10px;
+  }
+  .footer3_container,
+  .footer4_container {
+    width: 100%;
+    padding: 0 10px 15px 10px;
+  }
+}
+@media (min-width: 950px) and (max-width: 1199.9px) {
+  .footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer1_container,
+  .footer2_container,
+  .footer3_container,
+  .footer4_container {
+    width: 31%;
+    padding: 0 10px 15px 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer1_container,
+  .footer2_container,
+  .footer3_container,
+  .footer4_container {
     padding: 0 10px 10px 10px;
-}
-.footer2_container {
-    padding: 0 10px 10px 10px;
-}
-.footer3_container {
-    padding: 0 10px 10px 10px;
-}
-.footer4_container {
-    padding: 0 10px 10px 10px;
+    width: 23%;
+  }
 }
 .ft_logo {
-  width: 53%;
+  width: 177.86px;
   height: auto;
   padding-bottom: 5px;
 }
 .ft_logo img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .email_form {
-    display: inline-flex;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px 0 30px 0;
-    border: none;
+  display: inline-flex;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  border: none;
 }
-.ft_call,.ft_email {
-    display: flex;
-    gap: 8px;
-    padding-bottom: 10px;
+.ft_call,
+.ft_email {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 10px;
 }
-.call_info a,.email_info a {
-    text-decoration: none;
-    color: white;
-    font-family: "Mulish", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+.call_info a,
+.email_info a {
+  text-decoration: none;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
-.ft_call:hover a,.ft_email:hover a{
-    color: rgb(226, 105, 105);
-    font-weight: 400;
+.ft_call:hover a,
+.ft_email:hover a {
+  color: rgb(226, 105, 105);
+  font-weight: 400;
 }
-.fa-solid.fa-phone, .fa-solid.fa-envelope {
-    font-size: 12px;
-    color: white;
+.fa-solid.fa-phone,
+.fa-solid.fa-envelope {
+  font-size: 12px;
+  color: white;
 }
 .form {
-    display: flex;
-    align-items: flex-end;
-    border-bottom: 1.5px solid rgb(255, 255, 255);
-    padding-bottom: 8px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+  padding-bottom: 8px;
 }
 .email_input {
-    flex: 1;
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-family: "Mulish", sans-serif;
-    color: rgb(255, 255, 255);
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Mulish", sans-serif;
+  color: rgb(255, 255, 255);
 }
 .email_input::placeholder {
-    color: rgb(151, 150, 150);
+  color: rgb(151, 150, 150);
 }
 .submit_button {
-    padding: 10px 20px;
-    background-color: #010101;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: "Mulish", sans-serif;
-    font-weight: 600;
+  padding: 10px 20px;
+  background-color: #010101;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  width: 99.6px;
 }
 .ft_register {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 .register_title {
-    font-family: "Mulish", sans-serif;
-    color: white;
-    padding-bottom: 10px;
-    font-weight: 500;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  padding-bottom: 10px;
+  font-weight: 500;
 }
 .register_detail {
-    font-family: "Mulish", sans-serif;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
 }
 .connect_title {
-    font-family: "Mulish", sans-serif;
-    color: white;
-    font-weight: 500;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  font-weight: 500;
 }
 .connect_icon {
-    padding-top: 10px;
-    display:flex;
-    gap:10px;
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
 }
 .connect_img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
-.connect_img img{
-    object-fit: cover;
-    width: 100%;
+.connect_img img {
+  object-fit: cover;
+  width: 100%;
 }
 .ft2_title {
-    font-family: "Mulish", sans-serif;
-    color: white;
-    padding: 4px 0 12px 0;
-    font-weight: 500;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  padding: 4px 0 12px 0;
+  font-weight: 500;
 }
 .ft2_detail {
-    padding-bottom: 12px;
+  padding-bottom: 12px;
 }
 .ft2_detail a {
-    text-decoration: none;
-    color: white;
-    font-family: "Mulish", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+  text-decoration: none;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
-.ft2_detail:hover a{
-    color: rgb(226, 105, 105);
-    font-weight: 400;
+.ft2_detail:hover a {
+  color: rgb(226, 105, 105);
+  font-weight: 400;
 }
-
 
 .ft3_title {
-    padding: 0px 0 10px 0;
+  padding: 0px 0 10px 0;
 }
-.ft3_title:hover a{
-    color: rgb(226, 105, 105);
-    font-weight: 400;
+.ft3_title:hover a {
+  color: rgb(226, 105, 105);
+  font-weight: 400;
 }
-.ft3_title a{
-    font-family: "Mulish", sans-serif;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
+.ft3_title a {
+  font-family: "Mulish", sans-serif;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
 }
 .ft3_detail {
-    padding-bottom: 7px;
+  padding-bottom: 7px;
 }
 .ft3_detail a {
-    text-decoration: none;
-    color: white;
-    font-family: "Mulish", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+  text-decoration: none;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 .ft4_title {
-    font-family: "Mulish", sans-serif;
-    color: white;
-    padding: 0px 0 10px 0;
-    font-weight: 500;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  padding: 0px 0 10px 0;
+  font-weight: 500;
 }
 .ft4_body {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .ft4_content {
-    position: absolute;
-    top:70%;
-    transform: translate(5%, -72%);
-    width: 250px;
+  position: absolute;
+  top: 70%;
+  transform: translate(3%, -72%);
+  width: 200px;
 }
 .ft4_top {
-    display: flex;
-    gap: 10px;
-    padding-bottom: 40px;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 40px;
 }
 .page_name a {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, .9);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 .page_fl {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, .9);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
-.ft4_logo{
-    border: 2px solid white;
-    overflow: hidden;
-    aspect-ratio: 1/1;
+.ft4_logo {
+  border: 2px solid white;
+  overflow: hidden;
+  aspect-ratio: 1/1;
 }
-.ft4_logo img{
-    width: 100%;
+.ft4_logo img {
+  width: 100%;
 }
 .ft4_img {
-    max-width: 100%;
-    width: 340px;
-    overflow: hidden;
-    aspect-ratio: 296/115;
+  max-width: 100%;
+  width: 300px;
+  overflow: hidden;
+  aspect-ratio: 296/125;
 }
-.ft4_img img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.ft4_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .payment {
-    padding-top: 20px;
-    font-family: "Mulish", sans-serif;
-    color: white;
-    font-weight: 500;
-    padding-bottom: 10px;
+  padding-top: 20px;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  font-weight: 500;
+  padding-bottom: 10px;
 }
 .payment_method {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 .method_img {
-    width: 50px;
-    height: auto;
-
+  width: 50px;
+  height: auto;
 }
 .method_img img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .bocongthuong {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 .bct_img {
-    width:160px;
+  width: 160px;
 }
 .bct_img img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 .banquyen {
-    padding-top: 40px;
-    display: flex;
-    justify-content: center;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 .bq_title {
-    font-family: "Mulish", sans-serif;
-    color: white;
-    font-size: 14px;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  font-size: 14px;
 }
 .bq_title a {
-    text-decoration: none;
-    color: blue;
-    padding-left: 3px;
+  text-decoration: none;
+  color: blue;
+  padding-left: 3px;
 }
 .ft4_bottom {
-    display: flex;
-    justify-content: space-between;
-    width: 315px;
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
 }
-.ft4_btn1{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid grey;
-    border-radius: 2px;
+.ft4_btn1 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 2px;
 }
 #fb_ic {
-    font-size: 12px;
-    color: grey;
-    padding: 3px 0 4px 3px;
+  font-size: 12px;
+  color: grey;
+  padding: 3px 0 4px 3px;
 }
 #fb_ic_fl {
-    font-size: 12px;
-    padding: 3px 0 4px 3px;
-    color: rgb(0, 0, 134);
+  font-size: 12px;
+  padding: 3px 0 4px 3px;
+  color: rgb(0, 0, 134);
 }
 .fb {
-    font-weight: 600;
-    color: grey;
-    padding-left: 3px;
-    padding-top: 1px;
+  font-weight: 600;
+  color: grey;
+  padding-left: 3px;
+  padding-top: 1px;
 }
 .fb_fl {
-    font-weight: 600;
-    color: rgb(0, 0, 134);
-    padding-left: 3px;
-    padding-top: 2px;
+  font-weight: 600;
+  color: rgb(0, 0, 134);
+  padding-left: 3px;
+  padding-top: 2px;
 }
-.ft4_btn2{
-    display: flex;
-    cursor: pointer;
-    border: 1px solid grey;
-    border-radius: 2px;
-    align-items: center;
+.ft4_btn2 {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 2px;
+  align-items: center;
 }
 #share_ic {
-    font-size: 12px;
-    color: grey;
-    padding: 3px 0 5px 3px;
+  font-size: 12px;
+  color: grey;
+  padding: 3px 0 5px 3px;
 }
 .share {
-    padding-top: 1px;
-    padding-left: 3px;
-    font-weight: 600;
-    color: grey;
+  padding-top: 1px;
+  padding-left: 3px;
+  font-weight: 600;
+  color: grey;
 }
-.fa-brands.fa-twitter{
-    display: inline-block;
-    background: linear-gradient(to right, red, blue);
-    background-size: 200% 100%;
-    background-position: 0 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: background-position 0.5s;
-    cursor: pointer;
+.fa-brands.fa-twitter {
+  display: inline-block;
+  background: linear-gradient(to right, red, blue);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s;
+  cursor: pointer;
 }
-  
+
 .test:hover .fa-brands.fa-twitter {
-    background-position: -100% 0;
+  background-position: -100% 0;
 }
-  

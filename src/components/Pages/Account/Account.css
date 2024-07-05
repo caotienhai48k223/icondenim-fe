@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.account_div {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.account_detail {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+.account_main {
+  width: 430px;
+  padding: 20px 15px 30px 15px;
+  position: relative;
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  margin: 30px auto;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.account_type {
+  display: flex;
+  padding: 0 20px 0 20px;
+  margin-bottom: 30px;
+}
+
+.input {
+  font-family: "Mulish", sans-serif;
+  width: 98%;
+  border: none;
+  border-bottom: 1px solid rgb(195, 193, 193);
+  height: 30px;
+  padding:0 5px 0 5px;
+}
+.input:invalid:focus {
+  border: none; 
+  border-bottom: 1px solid rgb(0, 0, 0); 
+  outline: none; 
+}
+.input:valid,
+.input:valid:focus {
+  border: none;
+  border-bottom: 1px solid black; 
+  outline: none;
+}
+.login_sđt {
+  padding-bottom: 20px;
+}
+.login_password {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.look_password {
+  position: absolute;
+  left: 400px;
+}
+.eye_ic {
+  color: gray;
+  font-size: 16px;
+}
+.login_action {
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+.login_button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  border: none;
+  line-height: 20px;
+  padding: 7px 16px;
+  margin: 10px 0 ;
+  cursor: pointer;
+}
+.lose_password {
+  display: flex;
+  justify-content: center;
+}
+.lose_password a{
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+.lose_password a:hover{
+  color: red;
+}
+
+.register_action {
+  margin-bottom: 35px;
+}
+.register_button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  border: none;
+  line-height: 20px;
+  padding: 7px 16px;
+  margin: 10px 0 ;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.account_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.account_text a{
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(133, 133, 133);
+  cursor: pointer;
+}
+
+
+.account_text.show_acc a{
+  color: black;
+  border-bottom: 3px solid #000;
+  padding-bottom: 2px;
+  transition: border-bottom 0.1s ease, color 0.1s ease;
+}
+.content_acc {
+  display: none;
+}
+.content_acc.show_acc {
+  display: block;
+}
+
+.error_message {
+  font-family: "Mulish", sans-serif;
+  color: red;
+  font-size: 14px;
+  padding-left: 5px;
+}

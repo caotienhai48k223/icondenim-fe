@@ -394,7 +394,7 @@ export default function MobileDD({ visible, toggleMobileDropdown }) {
             <div className="menuquan_items">
               <div className="menuquan_items_title">
                 <Link to="/tat-ca-san-pham">Set Đồ</Link>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -481,8 +481,6 @@ export default function MobileDD({ visible, toggleMobileDropdown }) {
             </div>
           </div>
         </div>
-
-
 
       </div>
       <div className={`mobile_opacity ${visible ? "showopa" : "hideopa"}`} onClick={toggleMobileDropdown}></div>

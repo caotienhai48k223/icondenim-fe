@@ -7,16 +7,18 @@ import Icons from '../Header-bottom/Icons';
 
 export default function Header({ toggleMobileDropdown }) {
 
-    return (
-        <header className='header'>
-            <div className='header-top'>
-                <Marquee/>
-            </div>
-            <div className='header-bottom'>
-                <Logo toggleMobileDropdown={toggleMobileDropdown}/>
-                <Navigation/>
-                <Icons/>
-            </div>
-        </header>
-    );
+  return (
+    <header className='header'>
+      <div className='header-top'>
+        <Marquee />
+      </div>
+      <div className='header-bottom'>
+        <div className='headerbottom-content'>
+          <Logo toggleMobileDropdown={toggleMobileDropdown} />
+          <Navigation />
+          <Icons />
+        </div>
+      </div>
+    </header>
+  );
 }

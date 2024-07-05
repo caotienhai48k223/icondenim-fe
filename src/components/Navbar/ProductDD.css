@@ -5,8 +5,8 @@
   align-items: center;
   position: absolute;
   top:110px;
-  width: 1270px;
-  left:125px;
+  width: 82vw;
+  left:9vw;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   overflow: hidden;
@@ -26,8 +26,8 @@
   background-color: white;
   position: absolute;
   top:110px;
-  width: 205px;
-  left:530px;
+  width: 210px;
+  left:34.5vw;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   overflow: hidden;
@@ -47,8 +47,8 @@
   background-color: white;
   position: absolute;
   top:110px;
-  width: 200px;
-  left:650px;
+  width: 210px;
+  left:42.5vw;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   overflow: hidden;
@@ -166,7 +166,7 @@
   position: absolute;
   top:110px;
   width: 230px;
-  left:790px;
+  left:51.5vw;
   box-shadow: 0 0 10px rgba(0,0, 0, 0.2); 
   height: 0;
   transition: height 0.4s ease, font-size 0.3s ease;
