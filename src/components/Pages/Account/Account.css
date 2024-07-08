@@ -150,3 +150,68 @@
   font-size: 14px;
   padding-left: 5px;
 }
+
+.show_al,.show_am {
+  display: block;
+}
+.hide_al,.hide_am {
+  display: none;
+}
+
+.lose_title {
+  display: flex;
+  font-family:  "Mulish", sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  padding-top: 17px;
+  padding-bottom: 30px;
+}
+.lose_title a {
+  padding-left: 4px;
+  color: #000;
+}
+.lose_main {
+  width: 430px;
+  padding: 20px 15px 30px 15px;
+  position: relative;
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  margin: 31px auto;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+.lose_text {
+  display: flex;
+  justify-content: center;
+  font-family:  "Mulish", sans-serif;
+  font-size: 18px;
+}
+.lose_form {
+  padding-top: 24px;
+}
+.lose_button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  border: none;
+  line-height: 20px;
+  padding: 7px 16px;
+  margin: 10px 0 ;
+  cursor: pointer;
+}
+
+.back_login {
+  display: flex;
+  justify-content: center;
+}
+.back_login a{
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+.back_login a:hover{
+  color: red;
+}

@@ -17,13 +17,13 @@ export default function Footer4() {
       <div className='ft4_title'>FANPAGE CHÚNG TÔI</div>
       <div className='ft4_body'>
         <div className='ft4_img'>
-          <img src='https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/448767501_498435255861799_6772757424465711920_n.jpg?stp=dst-jpg_s350x350&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qsnN9RLdSM8Q7kNvgEhNUCc&_nc_ht=scontent.fdad3-6.fna&oh=00_AYCNyEKrlAcz7hvoHB2Qy5jgRzIQOxBz37JVuxfgZ59wpA&oe=667DC46A' alt='ft4_img'/>
+          <img src='https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/448767501_498435255861799_6772757424465711920_n.jpg?stp=dst-jpg_s350x350&_nc_cat=100&ccb=1-7&_nc_sid=4cb600&_nc_ohc=2D1SP1rjMkUQ7kNvgGtYADi&_nc_ht=scontent.fdad3-6.fna&oh=00_AYD9-5-z-DBjA_z9KzYF0OwyiwPpn00s9paw2jV8Kjnw2A&oe=669071AA' alt='ft4_img'/>
         </div>
         <div className='ft4_content'>
           <div className='ft4_top'>
             <div className='ft4_logo'>
               <a href='https://www.facebook.com/icondenimvn/?ref=embed_page' target='_blank' rel="noopener noreferrer">
-                <img src='https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-1/317796517_1820503985009361_5331018372770782419_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XTaLGvNjYIoQ7kNvgEj1iO2&_nc_ht=scontent.fdad3-6.fna&oh=00_AYAoA1Y8YJJr6ph269zyFaExiZ_IuJOz8sYGBfYbwYjBrA&oe=667DAB83' alt='ft4_logo'/>
+                <img src='https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-1/317796517_1820503985009361_5331018372770782419_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=6738e8&_nc_ohc=2-7KL2Sc7gsQ7kNvgGnv4a-&_nc_ht=scontent.fdad3-6.fna&oh=00_AYCbbM0ahUtVEZHKUBBIrD--aN0w9QfGeb6ooD6-xLuE8Q&oe=66909103' alt='ft4_logo'/>
               </a>
             </div>
             <div className='ft4_page'>

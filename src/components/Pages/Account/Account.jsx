@@ -2,19 +2,27 @@ import React from 'react'
 import Header from '../../Header/Header';
 import { Helmet } from 'react-helmet';
 import Footer from '../../Footer/Footer';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import './Account.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import MobileDD from '../../Header-bottom/MobileDD';
 
 export default function Account() {
+  const [mobileDropdownVisible, setMobileDropdownVisible] = useState(false);
+
+  const toggleMobileDropdown = () => {
+    setMobileDropdownVisible(!mobileDropdownVisible);
+  };
+
   const history = useNavigate();
 
   const listAcc = [
-    {phonenumber:'0973481940', password: 'Haitank4@'}, 
-    {phonenumber:'0352721386', password: 'Icondenim123+'},
-    {phonenumber:'0978186037', password: 'Hihihi234*'},
-    {phonenumber:'0389201983', password: 'Hahihi098%'}
+    { phonenumber: '0973481940', password: 'Haitank4@' },
+    { phonenumber: '0352721386', password: 'Icondenim123+' },
+    { phonenumber: '0978186037', password: 'Hihihi234*' },
+    { phonenumber: '0389201983', password: 'Hahihi098%' }
   ]
+  const initialLoginState = localStorage.getItem('currentLogin') === 'false' ? false : true;
 
   const [activeAccount, setActiveAccount] = useState('login');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -25,6 +33,22 @@ export default function Account() {
   const [showPassword, setShowPassword] = useState(false);
   const [touchedPhone, setTouchedPhone] = useState(false);
   const [touchedPassword, setTouchedPassword] = useState(false);
+  const [currentLogin, setCurrentLogin] = useState(initialLoginState);
+
+  useEffect(() => {
+    localStorage.setItem('currentLogin', currentLogin);
+  }, [currentLogin]);
+
+
+  const showLoseLogin = () => {
+    setCurrentLogin(false);
+    resetStates();
+  };
+  const showMainLogin = () => {
+    setCurrentLogin(true);
+    resetStates();
+  };
+
 
   const resetStates = () => {
     setPhoneNumber('');
@@ -41,7 +65,7 @@ export default function Account() {
     setActiveAccount(id);
     resetStates();
   }
- 
+
   const handlePhoneChange = (e) => {
     setPhoneNumber(e.target.value);
     if (touchedPhone) {
@@ -62,7 +86,7 @@ export default function Account() {
   };
 
   const validatePassword = (pass) => {
-    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!+-.,#$%*?&])[A-Za-z\d@$!+-.,#$%*?&]{8,}$/;
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!+_.,#$%*?&])[A-Za-z\d@$!+_.,#$%*?&]{8,}$/;
     return passwordRegex.test(pass);
   };
 
@@ -136,7 +160,7 @@ export default function Account() {
     }
 
     // Đăng nhập thành công
-    history.push('/home'); // Điều hướng đến trang chủ
+    history.push('/home');
   };
 
   const handleRegisterSubmit = (e) => {
@@ -169,7 +193,7 @@ export default function Account() {
       setPhoneError('Vui lòng nhập số điện thoại.');
       return;
     }
-    
+
     if (!validatePhoneNumber(phoneNumber)) {
       setPhoneError('Số điện thoại không hợp lệ.');
       return;
@@ -186,8 +210,9 @@ export default function Account() {
       <Helmet>
         <title>Tài khoản</title>
       </Helmet>
+      <MobileDD visible={mobileDropdownVisible} toggleMobileDropdown={toggleMobileDropdown} />
       <div className='account_page'>
-        <Header />
+        <Header toggleMobileDropdown={toggleMobileDropdown} />
         <body>
           <div className='account_div'>
             <div className='account_container'>
@@ -195,7 +220,7 @@ export default function Account() {
                 <div className='account_detail'>ĐĂNG NHẬP TÀI KHOẢN</div>
               </div>
               <div className='account_body'>
-                <div className='account_main'>
+                <div className={`account_main ${currentLogin ? 'show_am':'hide_am'}`}>
                   <div className='account_form'>
                     <div className='account_type'>
                       <div className={`account_text ${activeAccount === 'login' ? 'show_acc' : ''}`} onClick={() => showAccType('login')}>
@@ -208,56 +233,95 @@ export default function Account() {
                     <div className={`content_acc ${activeAccount === 'login' ? 'show_acc' : ''}`}>
                       <form acceptCharset='UTF-8' action="/account/login" id='form_login' method='post' onSubmit={handleSubmit}>
                         <div className='login_sđt'>
-                          <input 
-                          type="text" 
-                          id='sđt' 
-                          placeholder='Nhập số điện thoại' 
-                          className='input' 
-                          value={phoneNumber}
-                          onChange={handlePhoneChange}
-                          onBlur={handleBlurPhone}
-                          required/>
+                          <input
+                            type="text"
+                            id='sđt'
+                            placeholder='Nhập số điện thoại'
+                            className='input'
+                            value={phoneNumber}
+                            onChange={handlePhoneChange}
+                            onBlur={handleBlurPhone}
+                            required />
                           {phoneError && <div className='error_message'>{phoneError}</div>}
                         </div>
                         <div className='login_password'>
-                          <input 
-                          type={showPassword ? "text" : "password"}
-                          id='password' 
-                          placeholder='Mật khẩu' 
-                          className='input' 
-                          value={password}
-                          onChange={handlePasswordChange}
-                          onBlur={handleBlurPassword}
-                          required/>
+                          <input
+                            type={showPassword ? "text" : "password"}
+                            id='password'
+                            placeholder='Mật khẩu'
+                            className='input'
+                            value={password}
+                            onChange={handlePasswordChange}
+                            onBlur={handleBlurPassword}
+                            required />
                           <div className='look_password' onClick={() => setShowPassword(!showPassword)}>
                             <i class={`fa-regular fa-eye${showPassword ? '' : '-slash'} eye_ic`}></i>
                           </div>
                         </div>
                         {passwordError && <div className='error_message'>{passwordError}</div>}
                         <div className='login_action'>
-                          <input type="submit" className='login_button' value='ĐĂNG NHẬP'/>
-                          <div className='lose_password'><Link>Quên mật khẩu?</Link></div>
+                          <input type="submit" className='login_button' value='ĐĂNG NHẬP' />
+                          <div className='lose_password' onClick={showLoseLogin}>
+                            <Link>
+                            Quên mật khẩu?
+                            </Link>
+                          </div>
                         </div>
                       </form>
                     </div>
                     <div className={`content_acc ${activeAccount === 'register' ? 'show_acc' : ''}`}>
                       <form acceptCharset='UTF-8' action="/account/login" id='form_register' method='post' onSubmit={handleRegisterSubmit}>
                         <div className='login_sđt'>
-                          <input 
-                          type="text"
-                          id='sđt'
-                          placeholder='Nhập số điện thoại'
-                          name='phone_number'
-                          className='input'
-                          value={phoneNumber}
-                          onChange={handlePhoneChange}
-                          onBlur={handleBlurRegisterPhone}
-                          required
+                          <input
+                            type="text"
+                            id='sđt'
+                            placeholder='Nhập số điện thoại'
+                            name='phone_number'
+                            className='input'
+                            value={phoneNumber}
+                            onChange={handlePhoneChange}
+                            onBlur={handleBlurRegisterPhone}
+                            required
                           />
                           {phoneError && <div className='error_message'>{phoneError}</div>}
                         </div>
                         <div className='register_action'>
-                          <input type="submit" className='register_button' value='GỬI MÃ XÁC NHẬN'/>
+                          <input type="submit" className='register_button' value='GỬI MÃ XÁC NHẬN' />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div className={`account_lose ${currentLogin ? 'hide_al':'show_al'}`}>
+                  <div className='lose_title'>
+                    Bạn chưa có tài khoản ? 
+                    <Link>Đăng ký tại đây</Link>
+                  </div>
+                  <div className='lose_main'>
+                    <div className='lose_text'>
+                      PHỤC HỒI MẬT KHẨU
+                    </div>
+                    <div className='lose_form'>
+                      <form acceptCharset='UTF-8' id='form_lose' method='post' onSubmit={handleRegisterSubmit}>
+                        <div className='login_sđt'>
+                          <input
+                            type="text"
+                            id='sđt'
+                            placeholder='Nhập số điện thoại'
+                            name='phone_number'
+                            className='input'
+                            value={phoneNumber}
+                            onChange={handlePhoneChange}
+                            onBlur={handleBlurRegisterPhone}
+                            required
+                          />
+                          {phoneError && <div className='error_message'>{phoneError}</div>}
+                        </div>
+                        <div className='lose_action'>
+                          <input type="submit" className='lose_button' value='GỬI MÃ XÁC NHẬN' />
+                        </div>
+                        <div className='back_login' onClick={showMainLogin}>
+                          <Link>Quay lại</Link>
                         </div>
                       </form>
                     </div>
