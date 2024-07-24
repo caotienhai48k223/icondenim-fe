@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from "react-router-dom";
 import Header from "./components/Header/Header";
 import NewProduct from "./components/Pages/NewProduct";
-import Product from "./components/Pages/Product";
+import Product from "./components/Pages/Product/Product";
 import AoNam from "./components/Pages/AoNam";
 import Home from "./components/Pages/Home/Home";
 import QuanNam from "./components/Pages/QuanNam";

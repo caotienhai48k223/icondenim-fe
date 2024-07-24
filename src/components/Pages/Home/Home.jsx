@@ -14,6 +14,7 @@ import Instagram from './Instagram'
 import Footer from '../../Footer/Footer'
 import MobileDD from '../../Header-bottom/MobileDD'
 import { useState } from 'react'
+import RightFL from '../../Floating-layer/RightFL'
 
 export default function Home() {
   const [mobileDropdownVisible, setMobileDropdownVisible] = useState(false);
@@ -40,6 +41,7 @@ export default function Home() {
           <LookBook/>
           <Video/>
           <Instagram/>
+          <RightFL/>
         </body>
         <Footer/>
       </div>
