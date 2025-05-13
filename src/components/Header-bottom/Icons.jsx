@@ -1,25 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { GrMap } from "react-icons/gr";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaRegUser } from "react-icons/fa6";
+import { IoIosSearch } from "react-icons/io";
 
 export default function Icons() {
   return (
     <div className='icon'>
-      <div className='searchicon'>
-        <i class="fa-solid fa-magnifying-glass search1"></i>
+      <div className='searchicon' title='Tìm kiếm'>
+        <IoIosSearch className='search1'/>
       </div>
-      <div className='usericon'>
+      <div className='usericon' title='Đăng nhập'>
         <Link to='/account'>
-          <i class="fa-solid fa-user user1"></i>
+          <FaRegUser className='user1' />
         </Link>
       </div>
-      <div className='hearticon'>
-        <Link to='/enjoy'>
-          <i class="fa-solid fa-heart heart1"></i>
+      <div className='mapicon' title='Cửa hàng'>
+        <Link to='/map'>
+          <GrMap className='map1' />
         </Link>
       </div>
-      <div className='carticon'>
+      <div className='carticon' title='Giỏ hàng'>
         <Link to='/cart'>
-          <i class="fa-solid fa-cart-shopping cart1"></i>
+          <AiOutlineShoppingCart className='cart1' />
         </Link>
       </div>
     </div>

@@ -13,11 +13,22 @@ for i in range(1,17):
   all_items = soup.find_all("div",class_="product-block item")
   for a in all_items:
     b= {}
+    
     b['Title'] = a.find('div', class_='product-detail').find('a').attrs['title']
-    b['Price'] = a.find('div', class_='product-detail').find('span').get_text(strip=True)
+    
+    price_span = a.find('div', class_='product-detail').find('p').find('span')
+    price_a = a.find('div', class_='product-detail').find('p').find('a')
+    if price_span:
+      b['Price'] = price_span.get_text(strip=True)
+    elif price_a:
+      b['Price'] = price_a.get_text(strip=True)
+      
     b['Category'] = []
+    
     b['Img'] = []
+    
     b['Stock'] = 'Còn hàng'
+    
     for img in a.find_all('img'):
       if (img.get('data-src') not in b['Img']) and img.get('data-src') is not None:
         b['Img'].append(img.get('data-src'))

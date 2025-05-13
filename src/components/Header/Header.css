@@ -443,20 +443,20 @@
   gap: 15px;
 }
 .search1 {
-  color: #001F5D;
-  font-size: 23px;
+  color: black;
+  font-size: 29.3px;
 }
 .user1 {
-  color: #001F5D;
-  font-size: 23px;
+  color: #000000;
+  font-size: 22px;
 }
-.heart1 {
-  color: #001F5D;
+.map1 {
+  color: #000000;
   font-size: 23px;
 }
 .cart1 {
-  color: #001F5D;
-  font-size: 23px;
+  color: #000000;
+  font-size: 27px;
 }
 
 .menu {
